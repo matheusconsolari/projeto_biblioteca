@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<div class="topo">
+    <h1>Sistema Biblioteca Escolar</h1>
+    <p>Projeto Integrador - 3º Ano</p>
+
+
+    {% if session['perfil'] == 'admin' %}
+    <a href="/usuarios">Usuários</a>
+{% endif %}
+
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +26,7 @@
     <header>
         <div class="topo">
             <h1>Sistema Biblioteca Escolar</h1>
-            <p>Projeto Integrador - 1º Ano</p>
+            <p>Projeto Integrador - 3º Ano</p>
         </div>
 
 
@@ -28,6 +37,7 @@
             <a href="/bibliotecarios">Bibliotecários</a>
             <a href="/emprestimos">Empréstimos</a>
             <a href="/emprestimos/atrasados">Atrasados</a>
+            <a href="/logout">Sair</a>
         </nav>
     </header>
 
